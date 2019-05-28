@@ -1,0 +1,151 @@
+h1 {
+	font-family: Helvetica;
+	font-weight: normal;
+	color: black;
+	margin-left: 15px;
+}
+
+h2 {
+	font-family: Georgia;
+	font-weight: bolder;
+	color: #B9281E;
+	margin-left: 25px;
+}
+
+div.lower_bounds {
+	font-family: Georgia;
+	background-color: #EBF1F3;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #DEE9ED;
+	border-radius: 3px;
+
+/*	margin-left: 35px;
+	margin-top: 45px;*/
+	padding-right: 150px;
+	float: left;
+
+
+}
+
+div.histogram {
+	font-family: Georgia;
+	background-color: #EBF1F3;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #DEE9ED;
+	border-radius: 3px;
+
+	margin-left: 15px;
+/*	margin-top: 20px;
+*/	padding-right: 50px;
+/*	max-width: 300px;
+*/	
+	float: left;
+}
+
+form {
+	line-height: 3;
+	margin-left: 45px;
+	margin-bottom: 30px;
+	margin-right: 50px;
+}
+
+table {
+	line-height: 1.5;
+	margin-left: 40px;
+	margin-bottom: 40px;
+	margin-right: 0px;
+}
+
+td.text_cell {
+	margin-right: 10px;
+	padding-right: 30px;
+}
+
+td.graph_cell {
+	margin-top: 5px;
+	margin-left: 15px;
+	padding-bottom: 5px;
+	width: 100%;
+}
+
+hr {
+	background-color: red;
+	border-color: red;
+	height: 10px;
+	margin-left: 0;
+}
+
+#ap_bar {
+	width: 0%
+}
+
+#a_bar {
+	width: 0%
+}
+
+#am_bar {
+	width: 0%
+}
+
+#bp_bar {
+	width: 0%
+}
+
+#b_bar {
+	width: 0%
+}
+
+#bm_bar {
+	width: 0%
+}
+
+#cp_bar {
+	width: 0%
+}
+
+#c_bar {
+	width: 0%
+}
+
+#cm_bar {
+	width: 0%
+}
+
+#d_bar {
+	width: 0%
+}
+
+#f_bar {
+	width: 0%
+}
+
+input {
+	margin-left: 70px;
+	margin-top: 10px;
+	text-align: right;
+	padding-right: 10px;
+	padding-left: 15px;
+	width: 25%;
+	float: right;
+	line-height: 2;
+	font-family: georgia;
+	font-size: 15px
+}
+
+input:invalid {
+	border-color: red;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+div.errors {
+	color: red;
+	float: left;
+	margin-left: 20px;
+}

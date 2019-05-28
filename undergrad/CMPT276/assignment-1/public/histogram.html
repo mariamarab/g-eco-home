@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="histogram2.css">
+		<script src="calculate.js"></script>
+	</head>
+	<body onload="initialize()">
+		<h1>Histogram Generator</h1>
+		<div class="lower_bounds">
+			<h2>Lower bounds</h2>
+			<form onkeyup="initialize()">
+				Max <input id="max_in" type="number" min="0" max="100" value=100.00><br>
+				A+ <input id="a_plus_in" type="number" min="0" max="100" value=95.00><br>
+				A <input id="a_in" type="number" min="0" max="100" value=90.00><br>
+				A- <input id="a_minus_in" type="number" min="0" max="100" value=85.00><br>
+				B+ <input id="b_plus_in" type="number" min="0" max="100" value=80.00><br>
+				B <input id="b_in" type="number" min="0" max="100" value=75.00><br>
+				B- <input id="b_minus_in" type="number" min="0" max="100" value=70.00><br>
+				C+ <input id="c_plus_in" type="number" min="0" max="100" value=65.00><br>
+				C <input id="c_in" type="number" min="0" max="100" value=60.00><br>
+				C- <input id="c_minus_in" type="number" min="0" max="100" value=55.00><br>
+				D <input id="d_in" type="number" min="0" max="100" value=50.00><br>
+				F <input id="f_in" type="number" min="0" max="100" value=0.00><br>
+			</form>			
+		</div>
+		<div class="histogram">
+			<h2>Histogram</h2>
+			<table>
+				<tr><td>A+</td><td id="a_plus_out"></td></tr>
+				<tr><td>A</td><td id="a_out"></td></tr>
+				<tr><td>A-</td><td id="a_minus_out"></td></tr>
+				<tr><td>B+</td><td id="b_plus_out"></td></tr>
+				<tr><td>B</td><td id="b_out"></td></tr>
+				<tr><td>B-</td><td id="b_minus_out"></td></tr>
+				<tr><td>C+</td><td id="c_plus_out"></td></tr>
+				<tr><td>C</td><td id="c_out"></td></tr>
+				<tr><td>C-</td><td id="c_minus_out"></td></tr>
+				<tr><td>D</td><td id="d_out"></td></tr>
+				<tr><td>F</td><td id="f_out"></td></tr>
+			</table>
+		</div>
+		<div class="errors">
+			<p id="out_of_bounds" hidden>Error: Please ensure that the numeric values are between 0-100.</p>
+			<p id="range_overlap" hidden>Error: Please ensure that the ranges do not overlap.</p>
+			<p id="invalid_input" hidden>Error: Please ensure that you enter a numeric value.</p>
+	</body>
+</html>
